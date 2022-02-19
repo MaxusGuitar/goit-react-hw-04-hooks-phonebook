@@ -1,9 +1,9 @@
 import React from "react";
 import style from "./find.module.css";
-import propTypes from "prop-types";
+import PropTypes from "prop-types";
 
 const FindContact = ({ filter, change }) => (
-  <label htmlFor="" className={style.font}>
+  <label className={style.font}>
     {" "}
     Find contact:
     <input
@@ -16,8 +16,8 @@ const FindContact = ({ filter, change }) => (
 );
 
 FindContact.propTypes = {
-  filter: propTypes.string,
-  change: propTypes.func,
+  filter: PropTypes.string,
+  change: PropTypes.func,
 };
 
 export default FindContact;

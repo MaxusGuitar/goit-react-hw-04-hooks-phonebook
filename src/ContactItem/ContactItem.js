@@ -1,5 +1,5 @@
 import React from "react";
-import propTypes from "prop-types";
+import PropTypes from "prop-types";
 
 const ContactItem = ({ contactItem }) => (
   <p>
@@ -8,9 +8,10 @@ const ContactItem = ({ contactItem }) => (
 );
 
 ContactItem.propTypes = {
-  contactItem: propTypes.object,
-  name: propTypes.string,
-  number: propTypes.string,
+  contactItem: PropTypes.shape({
+    name: PropTypes.string,
+    number: PropTypes.string,
+  }),
 };
 
 export default ContactItem;
